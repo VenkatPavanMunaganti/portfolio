@@ -1,0 +1,19 @@
+.heading {
+    margin: 50px auto;
+}
+
+.heading h1 {
+    font-family: 'Permanent Marker', cursive;
+    color: #a00404;
+    font-size: 40px;
+}
+
+.heading h1:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 20px;
+    border-top: 5px solid #a00404;
+    border-radius: 50%;
+}

@@ -1,0 +1,16 @@
+.heading{
+    color: #a00404;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+}
+
+.main_ul{
+    margin-left: 1.5rem;
+}
+
+.sub_ul{
+    margin-left: 3rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 1.5rem;
+    color: #130d6b;
+}
