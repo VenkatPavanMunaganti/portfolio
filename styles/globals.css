@@ -103,10 +103,19 @@ nav li a:hover::after {
 
 .others {
     background: #ecfb90;
+    height: 300px;
+}
+
+.others ul{
+    margin-left: 2rem;
 }
 
 .nav-post-it li {
     cursor: pointer;
+}
+
+.nav-post-it li a{
+    color: #130D6B;
 }
 
 .nav-post-it:before {
@@ -133,4 +142,13 @@ nav li a:hover::after {
 .others {
     transform: rotate(-3deg);
     margin-top: 5rem;
+}
+
+
+.doodle input[type="checkbox"]:checked::after {
+    content: "\2713";
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #a00404;
+
 }

@@ -16,6 +16,10 @@
     flex: 1 1 60%;
 }
 
+.about_me li{
+    margin: 15px 0px;
+}
+
 .highlight_container,
 .highlight {
     position: relative;

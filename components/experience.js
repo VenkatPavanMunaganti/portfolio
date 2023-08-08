@@ -1,15 +1,102 @@
 import workEx from '@/public/data/experience.json'
 import companyStyles from '@/styles/company.module.css'
 import roleStyles from '@/styles/roles.module.css'
+import filterStyles from '@/styles/filter.module.css'
+import { useEffect, useRef, useState } from 'react'
+
+const Filter = ({ filters, handleChange }) => {
+    return (
+        <>
+            {filters.map((filter, index) => {
+                const [isChecked, setIsChecked] = useState(true);
+                return (
+                    <div className={filterStyles.filter} key={index}>
+                        <input type="checkbox" id={filter} name={filter} value={filter} defaultChecked={true} onChange={handleChange} />
+                        <label>{filter}</label>
+                    </div>
+                )
+            })}
+        </>
+    )
+}
 
 const Role = ({ role }) => {
+
+    useEffect(() => {
+
+        for (let i = 0; i < role.experiences.length; i++) {
+            role.experiences[i]['visibility'] = true
+        }
+
+        role.technologies.forEach(technology => {
+            activeSelectionsRef.current.push(technology)
+        });
+
+    }, [])
+
+    const [selectedExperience, setSelectedExperience] = useState(
+        role.experiences
+    );
+
+    const activeSelectionsRef = useRef([]);
+
+    const handleFiltering = (event) => {
+        const filteredTechnology = event.target.value;
+        const isSelected = event.target.checked;
+        if (isSelected) {
+            if (!activeSelectionsRef.current.includes(filteredTechnology)) {
+                activeSelectionsRef.current = [...activeSelectionsRef.current, filteredTechnology];
+            }
+            for (let i = 0; i < role.experiences.length; i++) {
+                const experienceTags = role.experiences[i].tags;
+                role.experiences[i].visibility = true;
+                for (let j = 0; j < experienceTags.length; j++) {
+                    if (!activeSelectionsRef.current.includes(experienceTags[j]))
+                        role.experiences[i].visibility = false;
+                }
+            }
+        } else {
+            for (let i = 0; i < role.experiences.length; i++) {
+                if (role.experiences[i].tags.includes(filteredTechnology)) {
+                    role.experiences[i].visibility = false;
+                    activeSelectionsRef.current = activeSelectionsRef.current.filter(
+                        (tech) => tech !== filteredTechnology
+                    );
+                }
+            }
+        }
+        setSelectedExperience(role.experiences.filter((experience) => experience.visibility))
+    };
+
     return (
         <ul className={roleStyles.main_ul}>
             <li className={roleStyles.heading}><h3>{role.role}</h3></li>
+            <div className={filterStyles.filter_container}>
+                <Filter filters={role.technologies} handleChange={handleFiltering} />
+            </div>
             <ul className={roleStyles.sub_ul}>
-                {role.experiences.map((experience, index) => {
+                {selectedExperience.map((experience, index) => {
                     return (
-                        <li key={index}>{experience.work}</li>
+                        <li key={index}>
+                            {experience.work}
+                            <span className={roleStyles.tags}>
+                                {experience.tags.map((tag, index) => {
+                                    if (activeSelectionsRef.current.length === 0) {
+                                        return (
+                                            <span key={index} className={roleStyles.tag}>{tag}</span>
+                                        )
+                                    } else {
+                                        for (let i = 0; i < activeSelectionsRef.current.length; i++) {
+                                            console.log(activeSelectionsRef.current[i])
+                                            if (activeSelectionsRef.current[i] === tag)
+                                                return (
+                                                    <span key={index} className={roleStyles.tag}>{tag}</span>
+                                                )
+                                        }
+                                    }
+                                })}
+                            </span>
+                        </li>
                     )
                 })}
             </ul>

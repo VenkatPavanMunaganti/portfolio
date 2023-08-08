@@ -7,19 +7,19 @@
           "role": "Project Engineer",
           "start date": "Aug 2021",
           "end date": "Jun 2022",
-          "technologies": ["Java", "Java EE", "Junit5", "Java Spring", "Spring Boot", "Spring Batch", "Angular", "Apache Solr", "Web Service", "Unix", "SQL"],
+          "technologies": ["Java EE", "Junit5", "Java Spring", "Spring Boot", "Spring Batch", "Angular", "Apache Solr", "Web Service", "Unix", "SQL"],
           "experiences": [
             {
               "work": "Upgraded legacy web applications, transitioning them from Java EE to Angular and Java Spring frameworks, achieving a remarkable ~30% rise in user engagement and satisfaction",
-              "tags": ["Java", "Java EE", "Angular", "Java Spring"]
+              "tags": ["Java EE", "Angular", "Java Spring"]
             },
             {
               "work": "Revamped mainframe applications with Spring boot and Junit 5 test cases, elevating the system reliability by ~10%",
-              "tags": ["Java", "Spring Boot", "Junit5"]
+              "tags": ["Spring Boot", "Junit5"]
             },
             {
               "work": "Reverse engineered outdated WSDL webservice JAR files using JD Decompiler to extract the source code and redeveloped the same using RESTful architecture and Spring Boot, resulted in enhanced security and robust codebase",
-              "tags": ["Web Service", "Java", "Spring Boot"]
+              "tags": ["Web Service", "Spring Boot"]
             },
             {
                 "work": "Spearheaded the integration of Oracle Coherence cache layers between Unix servers and SQL databases in Java EE and Spring Boot applications, resulting in ~15% reduction in redundant calls ",
@@ -27,7 +27,7 @@
             },
             {
                 "work": "Leveraged Apache Solr & Lucene to improve runtime of large-scale batch applications reliant on text processing, resulting in ~30% increased runtime efficiency ",
-                "tags": ["Apache Solr", "Spring Batch", "Java"]
+                "tags": ["Apache Solr", "Spring Batch"]
             }
           ]
         },
@@ -35,11 +35,11 @@
           "role": "Associate Project Engineer",
           "start date": "Dec 2020",
           "end date": "Aug 2021",
-          "technologies": ["Java", "CI/CD", "Java Spring", "Spring Boot", "Spring Batch"],
+          "technologies": ["Core Java", "CI/CD", "Java Spring", "Angular", "Spring Batch", "Web Applications"],
           "experiences": [
             {
-              "work": "Increased operational efficiency by ~10% in Spring Batch applications by automating the file transfers using SFTP",
-              "tags": ["Java", "Spring Batch"]
+              "work": "Increased operational efficiency by ~10% in Java Batch applications by automating the file transfers using SFTP",
+              "tags": ["Core Java"]
             },
             {
               "work": "Integrated SonarQube into the CI/CD pipelines of Spring Boot batch and web applications to proactively identify potential critical security threats ahead of time, resulting in a substantial ~40% decrement in vulnerability risks",
@@ -48,30 +48,6 @@
             {
               "work": "Proposed solutions for critical application issues after analyzing the source code proactively, minimizing the impact of failures and reducing the time spent by senior developers on resolution",
               "tags": ["Web Applications"]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "company" : "COMPANY 2",
-      "roles": [
-        {
-          "role": "Role 1 in COMPANY 2",
-          "start date": "start date",
-          "end date": "end date",
-          "experiences": [
-            {
-              "work": "Experience 1 in role 1 company 2",
-              "tags": ["tag1", "tag2", "tag3"]
-            },
-            {
-              "work": "Experience 2 in role 1 company 2",
-              "tags": ["tag1", "tag2", "tag3"]
-            },
-            {
-              "work": "Experience 2 in role 1 company 2",
-              "tags": ["tag1", "tag2", "tag3"]
             }
           ]
         }

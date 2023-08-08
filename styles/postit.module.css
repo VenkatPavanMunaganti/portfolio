@@ -15,6 +15,7 @@
 
 .post_it li {
     cursor: pointer;
+    margin-left: 20px;
 }
 
 .post_it:before {

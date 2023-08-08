@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "doodle.css": "^0.0.2",
     "font-awesome": "^4.7.0",
     "lottie-react": "^2.4.0",
     "next": "13.4.12",

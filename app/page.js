@@ -9,13 +9,15 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
-      <Section heading="skills">
+      <Section heading="#skills">
         <Skills />
       </Section>
-      <Section heading="Experience">
+      <Section heading="#Experience">
         <Experience />
       </Section>
-
+      <Section heading="#Projects">
+        <h1>Projects Here</h1>
+      </Section>
     </>
   );
 }

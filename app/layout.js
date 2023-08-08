@@ -2,6 +2,7 @@ import Sidebar from '@/components/sidebar'
 import '@/styles/globals.css'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import 'doodle.css/doodle.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <Head>
       </Head>
-      <body>
+      <body className="doodle">
         <Sidebar></Sidebar>
         <main className="main_content">{children}</main>
       </body>

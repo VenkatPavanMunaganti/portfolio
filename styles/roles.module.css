@@ -13,4 +13,21 @@
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5rem;
     color: #130d6b;
+    list-style: disc;
+}
+
+.sub_ul li{
+    margin: 15px 0px;
+}
+
+.tags{
+    display: flex;
+    gap: 1rem;
+}
+
+.tag{
+    background-color: #353535;
+    color: white;
+    font-size: 1rem;
+    padding: 0 1rem;
 }
