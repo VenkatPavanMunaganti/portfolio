@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
+const metadata = {
   title: 'Pavan Munaganti',
   description: 'Pavan Munaganti\' personal portfolio',
 }
