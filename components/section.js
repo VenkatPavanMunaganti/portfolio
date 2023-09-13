@@ -6,7 +6,7 @@ export const Section = ({heading, children}) => {
         <div className={styles.heading}>
           <h1>{heading}</h1>
         </div>
-        <div>{children}</div>
+        <div className={styles.section_content}>{children}</div>
     </section>
   )
 }

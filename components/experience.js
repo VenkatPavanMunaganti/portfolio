@@ -3,22 +3,8 @@ import companyStyles from '@/styles/company.module.css'
 import roleStyles from '@/styles/roles.module.css'
 import filterStyles from '@/styles/filter.module.css'
 import { useEffect, useRef, useState } from 'react'
+import Filter from './filter'
 
-const Filter = ({ filters, handleChange }) => {
-    return (
-        <>
-            {filters.map((filter, index) => {
-                const [isChecked, setIsChecked] = useState(true);
-                return (
-                    <div className={filterStyles.filter} key={index}>
-                        <input type="checkbox" id={filter} name={filter} value={filter} defaultChecked={true} onChange={handleChange} />
-                        <label>{filter}</label>
-                    </div>
-                )
-            })}
-        </>
-    )
-}
 
 const Role = ({ role }) => {
 

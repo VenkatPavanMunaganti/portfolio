@@ -36,6 +36,14 @@ const Skills = () => {
                     justify-content: space-around;
                     padding-right: 5rem;
                 }
+                @media screen and (max-width: 900px) {
+                    .container{
+                        flex-direction: column;
+                        padding-right: unset;
+                        align-items: center;
+                        gap: 5rem;
+                    }
+                }
             `}</style>
             <PostIt heading={languages.heading}
                 backgroundColor={languages.backgroundColor}

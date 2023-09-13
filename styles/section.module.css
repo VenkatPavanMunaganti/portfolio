@@ -17,3 +17,25 @@
     border-top: 5px solid #a00404;
     border-radius: 50%;
 }
+
+
+@media screen and (max-width: 900px) {
+    .heading h1:after {
+        width: 90%;
+        position: unset;
+        margin: auto;
+    }
+
+    .heading h1 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .section_content {
+        padding: 1rem;
+    }
+
+    .heading{
+        margin: 30px auto;
+    }
+}

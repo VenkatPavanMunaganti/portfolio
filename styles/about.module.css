@@ -4,7 +4,9 @@
     padding: 3rem;
     align-items: center;
 }
-
+.mobile_view{
+    display: none;
+}
 .about_lottie {
     flex: 1 1 40%;
 }
@@ -16,7 +18,7 @@
     flex: 1 1 60%;
 }
 
-.about_me li{
+.about_me li {
     margin: 15px 0px;
 }
 
@@ -45,4 +47,99 @@
     border-radius: 20% 25% 20% 24%;
     padding: 5px 3px 3px 6px;
     opacity: 0.8;
+}
+
+
+@media screen and (max-width: 900px) {
+    .section_container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .about_lottie {
+        display: none;
+    }
+
+    .about_me {
+        font-size: 1rem;
+        flex: unset;
+        padding-left: 1rem;
+    }
+
+    .m_about_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .mobile_view {
+        display: flex;
+        align-items: center;
+    }
+
+    .mobile_view p {
+        font-family: 'Permanent Marker', cursive;
+        ;
+    }
+
+    .mobile_view .m_salutation {
+        font-size: 1.3rem;
+    }
+
+    .mobile_view .m_name {
+        font-size: 1.7rem;
+        color: #130D6B;
+    }
+
+    .me_mobile {
+        color: transparent;
+        width: auto;
+        height: auto;
+        border: none !important;
+        transform: rotate(-10deg);
+        animation-name: tiltAnimation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+    }
+
+    .roles {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .roles p {
+        color: white;
+        font-size: 0.5rem;
+        background-color: #a00404;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+    .socials {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 0.8rem;
+        color: #393939;
+        background: #8ff9d2;
+        width: fit-content;
+        padding: 0 10px;
+        border-radius: 5px;
+    }
+
+    @keyframes tiltAnimation {
+
+        0% {
+            transform: rotate(-10deg);
+        }
+
+        50% {
+            transform: rotate(15deg);
+        }
+
+        100% {
+            transform: rotate(-10deg);
+        }
+    }
+
 }

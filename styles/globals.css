@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+.trigger {
+    display: none;
+}
+
 body {
     background-image: url('../public/images/eGa.svg');
     background-repeat: repeat;
@@ -106,7 +110,7 @@ nav li a:hover::after {
     height: 300px;
 }
 
-.others ul{
+.others ul {
     margin-left: 2rem;
 }
 
@@ -114,7 +118,7 @@ nav li a:hover::after {
     cursor: pointer;
 }
 
-.nav-post-it li a{
+.nav-post-it li a {
     color: #130D6B;
 }
 
@@ -146,9 +150,83 @@ nav li a:hover::after {
 
 
 .doodle input[type="checkbox"]:checked::after {
-    content: "\2713";
+    content: "\2713" !important;
     font-size: 1.5rem;
     font-weight: bolder;
     color: #a00404;
-
 }
+
+@media screen and (max-width: 900px) {
+
+    body {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .trigger {
+        display: block;
+    }
+
+    .navigation_bar {
+        padding: 0 2rem;
+        position: fixed;
+        z-index: 1;
+        transform: translate(-400px);
+        transition: transform 0.3s ease-in-out;
+        overflow-y: unset;
+    }
+
+    .nav-post-it li a {
+        font-size: 1rem;
+    }
+
+    .others ul li {
+        font-size: 1rem;
+    }
+
+    .navigation_bar_opened {
+        transform: translate(0px);
+    }
+
+    .nav-post-it {
+        margin: 3rem auto;
+    }
+
+    .navbar {
+        width: 250px;
+    }
+
+    .others {
+        display: none;
+    }
+
+    .main_content {
+        width: 100%;
+        gap: 0;
+        transform: translate(0px);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .move_main_content {
+        transform: translate(320px);
+    }
+
+    .doodle input[type="checkbox"]:checked::after {
+        font-size: 1rem;
+    }
+
+    .trigger {
+        font-family: 'Permanent Marker', cursive;
+        font-weight: bolder;
+        background: #ac2e2d;
+        padding: 10px;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        width: fit-content;
+        opacity: 0.8;
+    }
+}
+
+

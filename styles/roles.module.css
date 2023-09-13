@@ -1,14 +1,14 @@
-.heading{
+.heading {
     color: #a00404;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5rem;
 }
 
-.main_ul{
+.main_ul {
     margin-left: 1.5rem;
 }
 
-.sub_ul{
+.sub_ul {
     margin-left: 3rem;
     font-family: 'Permanent Marker', cursive;
     font-size: 1.5rem;
@@ -16,18 +16,43 @@
     list-style: disc;
 }
 
-.sub_ul li{
+.sub_ul li {
     margin: 15px 0px;
 }
 
-.tags{
+.tags {
     display: flex;
     gap: 1rem;
 }
 
-.tag{
+.tag {
     background-color: #353535;
     color: white;
     font-size: 1rem;
     padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .heading {
+        font-size: 1.25rem;
+    }
+
+    .main_ul {
+        margin-left: 2rem;
+    }
+
+    .sub_ul {
+        margin-left: 2rem;
+        font-size: 1rem;
+    }
+
+    .tags {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .tag {
+        font-size: 0.7rem;
+        padding: 0 1rem;
+    }
 }

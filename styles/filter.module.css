@@ -16,3 +16,11 @@
 .filter input[type=checkbox]:hover{
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 900px) {
+    .filter_container{
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+}

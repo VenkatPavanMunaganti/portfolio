@@ -1,0 +1,44 @@
+[
+    {
+        "id": 0,
+        "name": "Northeastern University",
+        "degree": "Masters in Software Engineering Systems",
+        "start": "Sept 2022",
+        "end": "May 2024",
+        "learnings": [
+            {
+                "id": 0,
+                "data": "Mastered full stack development with JS"
+            },
+            {
+                "id": 1,
+                "data": "Explored advanced algorithm and benchmarking/finetuning menthods"
+            },
+            {
+                "id": 2,
+                "data": "Currently learning cloud based application development using AWS"
+            }
+        ]
+    },
+    {
+        "id": 1,
+        "name": "Malla Reddy College",
+        "degree": "Bachelors in Computer Science and Engineering",
+        "start": "Aug 2016",
+        "end": "Sept 2020",
+        "learnings": [
+            {
+                "id": 1,
+                "data": "Attained proficiency in key CS skills: OS, DS & Algo, Computer Networks"
+            },
+            {
+                "id": 2,
+                "data": "Introduced to fundamental web application development concepts"
+            },
+            {
+                "id": 3,
+                "data": "Took advanced courses focusing on distrubuted computing"
+            }
+        ]
+    }
+]

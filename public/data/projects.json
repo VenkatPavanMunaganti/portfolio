@@ -1,0 +1,68 @@
+[
+    {
+        "title": "Piedpiper",
+        "technologies" : ["MongoDB", "ExpressJS", "React", "NodeJS"],
+        "description" : "Developed a Telemedic application using MERN stack as a part of INFO 6150 Web Development and User Experience Engineering capstone at Northeastern University",
+        "points": [
+            "Real time chat",
+            "Video conferencing",
+            "Appointment management",
+            "Prescription management"
+        ],
+        "github" : "https://github.com/siriganagari-raja-shekar/pied-piper-backend",
+        "demo": "https://drive.google.com/file/d/1sV-ems_7-Fy0MoHVHuVdOaNRg508base/view",
+        "live" : "https://piedpiper-server.onrender.com"
+    },
+    {
+        "title": "Christofedis Visualization",
+        "technologies" : ["Java", "Swing", "Algorithms"],
+        "description" : "Addressed the Travelling Salesperson problem (TSP) via the Christofides algorithm in Java, resulting in efficient solutions. Developed a Java Swing interface for visualizing optimized tour paths",
+        "github" : "https://github.com/VenkatPavanMunaganti/psa-final-project-spring2023",
+        "points": [
+            "Efficient TSP solution",
+            "Visualized optimized paths",
+            "~30% cost reduction",
+            "~17% tour enhancement",
+            "2nd place among 200 students"
+        ],
+        "live" : "https://drive.google.com/file/d/1GT4CPdnRcnM4wAtAnxSrrqkdj-JQoIpZ/view"
+    },
+    {
+        "title": "Job Tracker",
+        "technologies" : [ "Spring Boot", "Hibernate", "Thymeleaf", "AWS"],
+        "description" : "Developed JobTracker, an inventive kanban-style web application aiding job seekers in maintaining job application throughout their job search journey",
+        "points": [
+            "Kanban-style app for job seekers",
+            "Deployed on AWS EC2, RDS, and S3",
+            "Enabled 30+ classmates' access"
+        ],
+        "github" : "https://github.com/VenkatPavanMunaganti/JobTracker",
+        "live" : "https://drive.google.com/file/d/1yJBYc1aoN9lWbEgd9JxJ1LlB54MkSDyK/view"
+    },
+    {
+        "title": "Synopsis",
+        "technologies" : ["Python", "Angular", "Azure"],
+        "description" : "Developed Synopsis, an innovative summarization tool employing Lex Rank algorithm to produce concise summaries from textual content",
+        "points" : [
+            "Lex Rank algorithm",
+            "MVC and RESTful architecture",
+            "Azure Bing Search and Image Search APIs"
+        ],
+        "github" : null,
+        "live" : "https://docs.google.com/presentation/d/1wNrSzAEbWNWp7-aHE-1By5DUnWwzQ5cT/edit?usp=sharing&ouid=103299770451250359780&rtpof=true&sd=true"
+    },
+    {
+        "title": "Husky Books",
+        "technologies" : ["Core Java", "Swing", "Design Patterns"],
+        "description" : "Designed and developed Husky Books, an advanced Java-based Library Management System (LMS) automating library functions for admin, staff, and students",
+        "github" : "https://github.com/VenkatPavanMunaganti/LibraryManagementFinalProject",
+        "live" : "https://drive.google.com/file/d/1bjUxtDsitNozOl9rsbaszaFgtXR1Y2B0/view"
+    },
+    {
+        "title": "BTC India",
+        "technologies" : ["HTML", "JS", "PHP"],
+        "description" : "Developed a comprehensive website for BTC Social Organization in Hyderabad, India, showcasing campaigns and activities, enabling NGO registration, and event sign-ups",
+        "github" : null,
+        "live" : "https://drive.google.com/file/d/1sj3GaoQzeXEKaD3ZEmHfHqqPUuhw3S5E/view"
+    }
+]
