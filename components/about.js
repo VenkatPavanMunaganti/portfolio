@@ -30,16 +30,22 @@ export default function About() {
           </div>
           <div className={styles.socials}>
             <p>Wanna connect?</p>
-            <FontAwesomeIcon icon={faLinkedin} />
-            <FontAwesomeIcon icon={faGithubSquare} />
+            <a
+              href="https://www.linkedin.com/in/venkatpavanmunaganti/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
           </div>
+
         </div>
       </div>
       <ul className={styles.about_me}>
         <li><span className={styles.highlight_container}><span className={styles.highlight}>full-stack developer</span></span> with 3+ years of experience developing robust and modular full stack applications</li>
         <li>Skilled in building efficient and fault-tolerant web applications using HTML, CSS, Angular, and Java Spring</li>
         <li>3+ of experience developing enterprise-grade web and batch applications</li>
-        <li>Master's in Software Engineering Systems at Northeastern University, with a focus on cloud-front applications</li>
+        <li> Master's in Software Engineering Systems at Northeastern University, with a focus on cloud-front applications</li>
         <li>Eager to explore the synergy between web development and cloud computing for building more scalable and efficient systems</li>
       </ul>
     </div>
