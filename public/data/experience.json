@@ -1,56 +1,104 @@
 [
-    {
-      "company" : "Wipro Technologies",
-      "location": "India",
-      "roles": [
-        {
-          "role": "Project Engineer",
-          "start date": "Aug 2021",
-          "end date": "Jun 2022",
-          "technologies": ["Java EE", "Junit5", "Java Spring", "Spring Boot", "Spring Batch", "Angular", "Apache Solr", "Web Service", "Unix", "SQL"],
-          "experiences": [
-            {
-              "work": "Upgraded legacy web applications, transitioning them from Java EE to Angular and Java Spring frameworks, achieving a remarkable ~30% rise in user engagement and satisfaction",
-              "tags": ["Java EE", "Angular", "Java Spring"]
-            },
-            {
-              "work": "Revamped mainframe applications with Spring boot and Junit 5 test cases, elevating the system reliability by ~10%",
-              "tags": ["Spring Boot", "Junit5"]
-            },
-            {
-              "work": "Reverse engineered outdated WSDL webservice JAR files using JD Decompiler to extract the source code and redeveloped the same using RESTful architecture and Spring Boot, resulted in enhanced security and robust codebase",
-              "tags": ["Web Service", "Spring Boot"]
-            },
-            {
-                "work": "Spearheaded the integration of Oracle Coherence cache layers between Unix servers and SQL databases in Java EE and Spring Boot applications, resulting in ~15% reduction in redundant calls ",
-                "tags": ["Unix", "SQL", "Java EE", "Spring Boot"]
-            },
-            {
-                "work": "Leveraged Apache Solr & Lucene to improve runtime of large-scale batch applications reliant on text processing, resulting in ~30% increased runtime efficiency ",
-                "tags": ["Apache Solr", "Spring Batch"]
-            }
-          ]
-        },
-        {
-          "role": "Associate Project Engineer",
-          "start date": "Dec 2020",
-          "end date": "Aug 2021",
-          "technologies": ["Core Java", "CI/CD", "Java Spring", "Angular", "Spring Batch", "Web Applications"],
-          "experiences": [
-            {
-              "work": "Increased operational efficiency by ~10% in Java Batch applications by automating the file transfers using SFTP",
-              "tags": ["Core Java"]
-            },
-            {
-              "work": "Integrated SonarQube into the CI/CD pipelines of Spring Boot batch and web applications to proactively identify potential critical security threats ahead of time, resulting in a substantial ~40% decrement in vulnerability risks",
-              "tags": ["CI/CD", "Spring Batch", "Angular"]
-            },
-            {
-              "work": "Proposed solutions for critical application issues after analyzing the source code proactively, minimizing the impact of failures and reducing the time spent by senior developers on resolution",
-              "tags": ["Web Applications"]
-            }
-          ]
-        }
-      ]
-    }
+  {
+    "company": "Radiation Oncology, Brigham and Women’s Hospital",
+    "location": "Boston, MA",
+    "roles": [
+      {
+        "role": "Software Developer",
+        "start date": "Jul 2024",
+        "end date": "Present",
+        "technologies": ["Java", "Spring Boot", "Web API", "Apache Commons","Spring Framework", "Angular", "Performance Optimization", "Data JPA", "Spring Framework", "Performance Optimization"],
+        "experiences": [
+          {
+            "work": "Transformed a batch-based isodose image processing system into a real-time Spring Boot web API, removing the 5-minute delay, enabling instant request processing, and streamlining workflow efficiency for Dosimetrists and planners",
+            "tags": ["Spring Boot", "Web API"]
+          },
+          {
+            "work": "Architected a custom object pooling solution using Apache Commons API to efficiently manage non-JDBC database connections from a legacy system, enabling concurrent multi-database access and accelerating request processing by 35%",
+            "tags": ["Java", "Spring Boot", "Web API", "Apache Commons", "Performance Optimization"]
+          },
+          {
+            "work": "Minimized patient congestion in high-traffic hospital branches by 60% through the implementation of a Patient Volume Projection feature built using Spring Framework and Angular",
+            "tags": ["Spring Framework", "Angular"]
+          },
+          {
+            "work": "Restructured JPA entities and implemented entity graphs in a Spring framework based web application, reducing query execution time by 40% and optimizing complex relational data fetching",
+            "tags": ["Data JPA", "Spring Framework", "Performance Optimization"]
+          },
+          {
+            "work": "Upgraded the StatusBoard application from Java 8 to Java 21, modernizing the tech stack by migrating to the latest Spring Framework and Data JPA versions, improving performance, security, and maintainability",
+            "tags": ["Java", "Spring Framework", "Data JPA"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Information Technology Services, Northeastern University",
+    "location": "Boston, MA",
+    "roles": [
+      {
+        "role": "Customer Experience Engineer",
+        "start date": "Jun 2023",
+        "end date": "Apr 2024",
+        "technologies": ["Power Automate", "REST API", "Automation", "Customer Service", "Mentorship", "Technical Support", "Communication", "Problem Solving" ],
+        "experiences": [
+          {
+            "work": "Automated monitoring of 30+ campus printers using Power Automate and Papercut REST API, posting updates to Teams, reducing manual checks by 4 hours, and increasing uptime by 40%",
+            "tags": ["Power Automate", "REST API", "Automation"]
+          },
+          {
+            "work": "Mentored 10+ new hires in customer service methodologies, increasing the monthly average rating from 4.2 stars to 4.5 stars",
+            "tags": ["Customer Service", "Mentorship"]
+          },
+          {
+            "work": "Provided technical support to 500+ Northeastern users by resolving a wide range of issues via calls, chats, and emails. Received 300+ five-star ratings for demonstrating exceptional communication and problem-solving skills",
+            "tags": ["Technical Support", "Communication", "Problem Solving"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Wipro Technologies",
+    "location": "Hyderabad, India",
+    "roles": [
+      {
+        "role": "Software Engineer",
+        "start date": "Aug 2021",
+        "end date": "Jun 2022",
+        "technologies": ["Java EE", "Junit5", "Java Spring", "Spring Boot", "Spring Batch", "REST API", "React", "Apache Solr", "Web Service", "Unix", "SQL", "Cache", "CI/CD"],
+        "experiences": [
+          {
+            "work": "Upgraded 5+ legacy Java MVC applications to Spring REST APIs & React SPAs, offloading the rendering tasks to client’s browser and accommodating an additional 1000+ requests per hour post-transition leading to a 30% increase in site reliability",
+            "tags": ["Java EE", "React", "Java Spring", "REST API"]
+          },
+          {
+            "work": "Automated data retrieval from an external API, transformation, and storage in data warehouses using a Java Spring microservice, saving 5+ hours monthly and reducing data inaccuracies from 20 to 5 reports per month",
+            "tags": ["Java Spring", "Spring Boot"]
+          },
+          {
+            "work": "Led a team of 2 developers in transitioning 3+ mainframe batch applications to Spring Batch following Test-Driven Development (TDD), cutting operational costs by 30% and mean time to recovery (MTTR) by 20%, while enhancing integration capabilities",
+            "tags": ["Spring Batch"]
+          },
+          {
+            "work": "Engineered Redis-based cache solution between 4+ spring applications and database, cutting down the redundant database read requests by 20,000 calls per month and reducing the database infrastructure costs by 10%",
+            "tags": ["Cache", "Java Spring"]
+          },
+          {
+            "work": "Leveraged Apache Solr & Lucene to improve runtime of large-scale batch applications reliant on text processing, resulting in ~30% increased runtime efficiency",
+            "tags": ["Apache Solr", "Spring Batch"]
+          },
+          {
+            "work": "Reverse engineered outdated WSDL webservice JAR files using JD Decompiler to extract the source code and redeveloped the same using RESTful architecture and Spring Boot, resulted in enhanced security and robust codebase",
+            "tags": ["Web Service", "Spring Boot"]
+          },
+          {
+            "work": "Integrated SonarQube into the CI/CD pipelines of Spring Boot batch and web applications to proactively identify potential critical security threats ahead of time, resulting in a substantial ~40% decrement in vulnerability risks",
+            "tags": ["CI/CD", "Spring Batch", "React"]
+          }
+        ]
+      }
+    ]
+  }
 ]
