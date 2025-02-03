@@ -1,4 +1,39 @@
 [
+    
+    {
+        "title": "Academify Backend API",
+        "technologies": ["Go", "Java Spring", "Python", "AWS", "GCP", "Terraform"],
+        "description": "Developed RESTful APIs and cloud infrastructure to manage assignment workflows across multiple courses.",
+        "points": [
+            "Developed APIs in Go & Java",
+            "Built AWS Lambda functions",
+            "Managed metadata in DynamoDB",
+            "Automated infra with Terraform"
+        ]
+    },
+    {
+        "title": "Medical Insurance System",
+        "technologies": ["Java Spring Boot", "GraphQL", "Docker", "Elasticsearch", "RabbitMQ"],
+        "description": "Deployed a GraphQL API to manage employee medical coverage plans and optimized search functionalities.",
+        "points": [
+            "Developed GraphQL API",
+            "Indexed 1,000+ medical plans",
+            "Used Elasticsearch for fast search",
+            "Enabled updates with RabbitMQ"
+        ]
+    },
+    {
+        "title": "Job Tracker Web App",
+        "technologies": ["Java Spring", "HTML", "CSS", "jQuery", "JDBC", "Hibernate", "Terraform", "AWS"],
+        "description": "Developed a kanban-style job tracking web app to help job seekers organize their job applications.",
+        "points": [
+            "Built with Java Spring & Hibernate",
+            "Used MVC and DAO patterns",
+            "Deployed on AWS EC2 & RDS",
+            "Used by 30+ classmates"
+        ],
+        "live": "https://drive.google.com/file/d/1yJBYc1aoN9lWbEgd9JxJ1LlB54MkSDyK/view?usp=drive_link"
+    },
     {
         "title": "Piedpiper",
         "technologies" : ["MongoDB", "ExpressJS", "React", "NodeJS"],
