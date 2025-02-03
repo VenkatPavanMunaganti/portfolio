@@ -22,8 +22,8 @@ const Sidebar = ({ isOpen }) => {
           Connect with me
         </span>
         <ul>
-          <li><a href="https://www.linkedin.com/in/pavan-munaganti/">LinkedIn</a></li>
-          <li><a href="https://github.com/VenkatPavanMunaganti">Github</a></li>
+          <li><a href="https://www.linkedin.com/in/venkatpavanmunaganti/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/VenkatPavanMunaganti" target="_blank" rel="noopener noreferrer">Github</a></li>
         </ul>
       </div>
     </div>
